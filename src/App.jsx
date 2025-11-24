@@ -9,7 +9,10 @@ function App() {
     <div className="animate__animated animate__fadeInUp animate__delay-3s">
       <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
         <img src= {DataImage.HeroImage} alt="Hero Image" className="w-10 rounded-b-md" loading="lazy"/>
-        <q>kode yang indah, lahir dari ketekunan.</q>
+        <p> "It's not about whether you can or can't do it. It's about whether you do it or not." 
+          <br />
+          -Shirou Emiya 
+        </p>
       </div>
       <h1 className="text-5xl/tight font-bold mb-6">Hi, Saya Rasyif Ibnu Hasri</h1>
       <p className="text-base/loose mb-6 opacity-50">Saya adalah pemula dalam dunia IT yang luas dan penuh peluang. 
@@ -21,7 +24,7 @@ function App() {
         untuk berkembang dan menjadi lebih baik.</p>
 
         <div className="flex items-center sm:gap-4 gap-2 ">
-          <a href="#" className=" bg-blue-700 p-4 rounded-2xl hover:bg-blue-600">Download CV <i className="ri-download-line ri-lg"></i></a>
+          <a href="https://docs.google.com/document/d/1_l4UAQ0645idk8-i2LND2MmSNvdgPlNr_OgHLyX0oC0/edit?usp=sharing" className=" bg-blue-700 p-4 rounded-2xl hover:bg-blue-600">Download CV <i className="ri-download-line ri-lg"></i></a>
           <a href="#proyek"  className=" bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">Lihat Proyek <i className="ri-arrow-down-line" ri-lg></i></a>
         </div>
     </div>
@@ -44,12 +47,12 @@ function App() {
       <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md sm:block hidden" loading="lazy"/>
       <div className="flex items-center justify-between gap-6">
         <div>
-          <h1 className="text-4xl mb-1">45 <span className="text-blue-500">+</span>
+          <h1 className="text-4xl mb-1">4<span className="text-blue-500">+</span>
           </h1>
           <p>Proyek Selesai</p>
         </div>
         <div>
-          <h1 className="text-4xl mb-1">4<span className="text-blue-500">+</span>
+          <h1 className="text-4xl mb-1">1<span className="text-blue-500">+</span>
           </h1>
           <p>Tahun Pengalaman</p>
         </div>
@@ -62,28 +65,39 @@ function App() {
   <div className="tools mt-32 " >
     <h1 className="text-4xl/snug font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Tools yang dipakai </h1>
     <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-    Berikut ini beberapa tools yang pernah digunakan</p>
-      <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
+    Berikut ini beberapa tools yang pernah digunakan:</p>
 
-      {listTools.map(tool => (
-         <div className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group" key={tool.id}  data-aos="fade-up" data-aos-duration="1000" data-aos-delay={tool.dad}>
-        <img src={tool.gambar} alt="Tools Image" className="w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900 " />
-        <div>
-          <h4 className="font-bold">
-            {tool.nama}
-          </h4>
-          <p className="opacity-50">{tool.ket}</p>
-        </div>
+      <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
+        {listTools.map((tool) => (
+          <a // 1. Ubah <div> menjadi <a>
+            href={tool.link} // 2. Masukkan link dari data.js
+            target="_blank" // 3. Agar terbuka di tab baru
+            rel="noopener noreferrer" // 4. Keamanan untuk tab baru
+            className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 hover:border-zinc-400 transition-all group cursor-pointer" // 5. Saya tambahkan hover:border dan transition agar lebih halus
+            key={tool.id}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay={tool.dad}
+          >
+            <img
+              src={tool.gambar}
+              alt="Tools Image"
+              className="w-14 bg-zinc-800 p-1 rounded-sm group-hover:bg-zinc-900 transition-colors" // Opsional: tambahkan transition
+            />
+            <div>
+              <h4 className="font-bold">{tool.nama}</h4>
+              <p className="opacity-50 text-sm">{tool.ket}</p>
+            </div>
+          </a>
+        ))}
       </div>
-      ))}
-     </div>
     </div >
     {/*tentang*/}
 
     {/*proyek*/}
     <div className="proyek mt-32 py-10" id="proyek">
       <h1 className="text-center text-4xl font-bold mb-2"  data-aos="fade-up" data-aos-duration="1000">Proyek</h1>
-      <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Berikut ini beberapa proyek yang telah saya buat</p>
+      <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Berikut ini beberapa proyek yang telah dibuat:</p>
       <div className="Proyek-box mt-14 grid grid-cols-1 sm:grid-cols-3  gap-4">
         {listProyek.map(proyek=>(
           <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay={proyek.dad}>
@@ -97,7 +111,14 @@ function App() {
               ))}
             </div>
             <div className="mt-8 text-center">
-              <a href="#" className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600">Lihat Proyek</a>
+              <a 
+                href={proyek.link} // Ubah bagian ini
+                target="_blank"    // Tambahan: agar membuka tab baru
+                rel="noopener noreferrer" // Tambahan: keamanan untuk target="_blank"
+                className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600"
+              >
+                Lihat Proyek
+              </a>
             </div>
            </div>
           </div>

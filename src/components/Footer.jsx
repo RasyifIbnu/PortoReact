@@ -10,16 +10,16 @@ const Footer = () => {
             <a href="#proyek">Proyek</a>
         </div>
         <div className="flex items-center gap-3">
-            <a href="#">
+            <a href="https://github.com/RasyifIbnu">
                 <i className="ri-github-fill ri-2x"></i>
             </a>
-             <a href="#">
+             <a href="https://www.instagram.com/rasyif_ibnu?igsh=a3V2YWpnYzBkeGpq">
                 <i className="ri-instagram-fill ri-2x"></i>
             </a>
-             <a href="#">
+             <a href="https://www.linkedin.com/in/rasyif-ibnu-hasri-8b0867311/">
                 <i className="ri-linkedin-fill ri-2x"></i>
             </a>
-             <a href="#">
+             <a href="https://youtube.com/@nuninuch?si=0bKN2ezZyLpEwsRJ">
                 <i className="ri-youtube-fill ri-2x"></i>
             </a>
         </div>
