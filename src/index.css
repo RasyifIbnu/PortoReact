@@ -3,5 +3,47 @@
 @layer base {
   body {
      font-family: "Poppins", sans-serif;
+     background: linear-gradient(180deg, #050510 0%, #08080f 30%, #0f0f1a 60%, #0a1015 100%);
+     min-height: 100vh;
+     background-attachment: fixed;
+     position: relative;
+  }
+  
+  body::before {
+     content: '';
+     position: fixed;
+     top: 50px;
+     right: 100px;
+     width: 150px;
+     height: 150px;
+     background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 50%, transparent 70%);
+     border-radius: 50%;
+     pointer-events: none;
+     z-index: 1;
+  }
+}
+
+
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+    
+    /* 1. Warna dasar hitam pekat (Langit Malam) */
+    background-color: #020617; /* Slate 950 hex */
+
+    /* 2. Agar teks default menjadi putih/terang (Kontras) */
+    color: #f8fafc; /* Slate 50 hex */
+
+    /* 3. Efek Cahaya Bulan (Moonlight) */
+    /* Ini membuat pendaran biru keabu-abuan dari tengah atas layar */
+    background-image: radial-gradient(
+      circle at 50% 0%, 
+      #1e293b 0%,   /* Bagian terang (sumber cahaya) - Slate 800 */
+      #020617 70%   /* Bagian gelap (langit malam) - Slate 950 */
+    );
+
+    /* Pastikan background menutupi seluruh tinggi layar */
+    min-height: 100vh;
   }
 }
