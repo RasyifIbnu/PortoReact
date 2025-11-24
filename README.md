@@ -11,4 +11,4 @@ npm install animate.css --save
 npm install --save aos@next
 
 npm run dev
->>>>>>> ad24a698ac41377a9b9fd1e24e1dca0b3fefebde
+
