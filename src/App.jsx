@@ -169,7 +169,7 @@ function App() {
           data-aos-duration="1000"
           data-aos-delay="300"
         >
-          projects I have worked on:
+          Projects I have worked on:
         </p>
         <div className="Proyek-box mt-14 grid grid-cols-1 sm:grid-cols-3  gap-4">
           {listProyek.map((proyek) => (
