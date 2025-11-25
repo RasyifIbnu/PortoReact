@@ -18,9 +18,9 @@ function App() {
             Hello, I am <span className="text-blue-600"> Rasyif Ibnu Hasri</span>
           </h1>
           <p className="text-base/loose mb-6 opacity-100 "><span className="text-gray-200">
-           As an emerging developer, I am deeply committed to developing high-quality software solutions.
-            I believe that coding is more than just writing syntax; it is about solving real-world problems.
-            I dedicate my time to mastering modern technologies and applying them to build applications that deliver seamless performance and meaningful value.
+           As an emerging freelance developer, I am committed to creating modern and reliable digital solutions across Web Development and Machine Learning.
+            For me, coding is not just about writing syntax—it is about solving real problems through thoughtful design and efficient technology. 
+           I continually refine my skills in modern frameworks and AI development to build applications that deliver seamless performance and meaningful impact.
           </span></p>
 
           <div className="flex items-center sm:gap-4 gap-2 ">
@@ -63,22 +63,20 @@ function App() {
   
             {/* Paragraf 1 */}
             <p>
-              Hey there! I’m Rasyif. My journey into tech wasn't just about getting a degree; it was sparked by the realization that code is a superpower to <span >build cool things</span>. 
-              What started as simple curiosity has evolved into a serious passion for understanding how complex systems work and how to <span >build them from scratch</span>.
+              Hey there! I’m Rasyif. I am a freelancer specializing in Software/Web Development and Machine Learning, with a focus on delivering effective digital solutions that align with user needs. 
+              My journey began with an interest in programming, which developed into a commitment to understanding and building systems comprehensively.
             </p>
-
             {/* Paragraf 2 */}
             <p>
-              While pursuing my <span >Informatics degree</span>, I refused to stay within the bounds of textbooks. 
-              Over the last <span >1+ year</span>, I’ve been getting my hands dirty with real code, successfully shipping <span >3+ diverse projects</span>. 
-              My technical focus has expanded from crafting interactive web interfaces to training intelligent <span >Machine Learning models</span> for real-world applications.
+              During my Informatics studies, I actively engaged in projects beyond the curriculum and successfully completed several real-world projects, 
+              ranging from developing interactive web interfaces to creating Machine Learning models for practical applications.
+               These experiences strengthened my technical competence in end-to-end software development.
             </p>
 
             {/* Paragraf 3 */}
             <p>
-              What excites me most is the continuous evolution of technology.
-               I’m always eager to dive into new challenges and pick up <span >fresh skills</span>—whether it’s exploring <span >AI-powered solutions</span> or mastering the latest frontend frameworks. 
-              I believe in constant growth, and I’m ready to take on the next big challenge.
+              As a freelancer, I prioritize professionalism, time management, and continuous learning.
+               I consistently update my skills by exploring modern web technologies and the latest approaches in AI development to deliver work that is relevant, reliable, and of high quality.
             </p>
 
           </div>
