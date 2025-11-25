@@ -1,5 +1,6 @@
 import DataImage from "./data";
 import {listTools , listProyek} from "./data"
+import {listInspirasi} from "./data"
 
 function App() {
   {/* Beranda */}
@@ -7,39 +8,20 @@ function App() {
     <>
       <div className="md:hidden pt-20 pb-8">
         <h1 className="text-3xl font-bold text-white text-center">
-          Portofolio
+         My Portofolio
         </h1>
       </div>
       <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
         <div className="animate__animated animate__fadeInUp animate__delay-3s">
-          <div className="flex rounded items-center gap-3 mb-6 bg-zinc-800/80 backdrop-blur-sm border border-zinc-700/50 w-fit p-4Â rounded-2xl">
-            <img
-              src={DataImage.HeroImage}
-              alt="Hero Image"
-              className="w-10 rounded-b-md"
-              loading="lazy"
-            />
-            <p>
-              {" "}
-              "It's not about whether you can or can't do it. It's about whether
-              you do it or not."
-              <br />
-              -Shirou Emiya
-            </p>
-          </div>
+          
           <h1 className="text-5xl/tight font-bold mb-6">
-            Hi, Saya Rasyif Ibnu Hasri
+            Hello, I am <span className="text-blue-600"> Rasyif Ibnu Hasri</span>
           </h1>
-          <p className="text-base/loose mb-6 opacity-50">
-            Saya adalah pemula dalam dunia IT yang luas dan penuh peluang.
-            <br />
-            Meski masih di awal perjalanan, saya berkomitmen untuk terus
-            mengasah
-            <br />
-            kemampuan dan mempelajari teknologi baru. Setiap tantangan baru
-            <br />
-            adalah kesempatan bagi saya untuk berkembang dan menjadi lebih baik.
-          </p>
+          <p className="text-base/loose mb-6 opacity-100 "><span className="text-gray-200">
+           As an emerging developer, I am deeply committed to developing high-quality software solutions.
+            I believe that coding is more than just writing syntax; it is about solving real-world problems.
+            I dedicate my time to mastering modern technologies and applying them to build applications that deliver seamless performance and meaningful value.
+          </span></p>
 
           <div className="flex items-center sm:gap-4 gap-2 ">
             <a
@@ -52,7 +34,7 @@ function App() {
               href="#proyek"
               className=" bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600"
             >
-              Lihat Proyek <i className="ri-arrow-down-line" ri-lg></i>
+              View Projects <i className="ri-arrow-down-line" ri-lg></i>
             </a>
           </div>
         </div>
@@ -65,7 +47,7 @@ function App() {
       </div>
 
       {/* TENTANG */}
-      <div className="tentang mt-32 py-10" id="tentang">
+      <div className="tentang mt-32 py-40" id="tentang">
         <div
           className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg"
           data-aos="fade-up"
@@ -77,16 +59,29 @@ function App() {
             className="w-12 rounded-md mb-15 sm:hidden"
             loading="lazy"
           />
-          <p className="text-base/loose mb-10">
-            Hi, saya Rasyif Ibnu Hasri. Saya sorang mahasiswa jurusan
-            informatika. saya masih pemula dalam dunia IT yang luas, tetapi rasa
-            ingin tahu membuat saya terus belajar dan mencoba hal-hal baru. Saya
-            percaya bahwa teknologi bukan hanya soal tampilannya saja, tetapi
-            juga bagaimana ia memberikan pengalaman terbaik bagi penggunanya.
-            Meskipun perjalanan saya baru dimulai, saya selalu berusaha
-            berkembang dan menghasilkan karya yang lebih baik dari waktu ke
-            waktu.
-          </p>
+          <div className="text-base leading-loose mb-10 space-y-6 text-gray-200">
+  
+            {/* Paragraf 1 */}
+            <p>
+              Hey there! I’m Rasyif. My journey into tech wasn't just about getting a degree; it was sparked by the realization that code is a superpower to <span >build cool things</span>. 
+              What started as simple curiosity has evolved into a serious passion for understanding how complex systems work and how to <span >build them from scratch</span>.
+            </p>
+
+            {/* Paragraf 2 */}
+            <p>
+              While pursuing my <span >Informatics degree</span>, I refused to stay within the bounds of textbooks. 
+              Over the last <span >1+ year</span>, I’ve been getting my hands dirty with real code, successfully shipping <span >3+ diverse projects</span>. 
+              My technical focus has expanded from crafting interactive web interfaces to training intelligent <span >Machine Learning models</span> for real-world applications.
+            </p>
+
+            {/* Paragraf 3 */}
+            <p>
+              What excites me most is the continuous evolution of technology.
+               I’m always eager to dive into new challenges and pick up <span >fresh skills</span>—whether it’s exploring <span >AI-powered solutions</span> or mastering the latest frontend frameworks. 
+              I believe in constant growth, and I’m ready to take on the next big challenge.
+            </p>
+
+          </div>
           <div className="flex items-center justify-between">
             <img
               src={DataImage.HeroImage}
@@ -97,15 +92,15 @@ function App() {
             <div className="flex items-center justify-between gap-6">
               <div>
                 <h1 className="text-4xl mb-1">
-                  4<span className="text-blue-500">+</span>
+                  3<span className="text-blue-500">+</span>
                 </h1>
-                <p>Proyek Selesai</p>
+                <p>Projects</p>
               </div>
               <div>
                 <h1 className="text-4xl mb-1">
                   1<span className="text-blue-500">+</span>
                 </h1>
-                <p>Tahun Pengalaman</p>
+                <p>Years</p>
               </div>
             </div>
           </div>
@@ -119,7 +114,7 @@ function App() {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          Tools yang dipakai{" "}
+          Tools & Technologies{" "}
         </h1>
         <p
           className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50"
@@ -127,7 +122,7 @@ function App() {
           data-aos-duration="1000"
           data-aos-delay="300"
         >
-          Berikut ini beberapa tools yang pernah digunakan:
+          Here are some tools I have worked with:
         </p>
 
         <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
@@ -157,14 +152,16 @@ function App() {
       </div>
       {/*tentang*/}
 
+
+
       {/*proyek*/}
-      <div className="proyek mt-32 py-10" id="proyek">
+      <div className="proyek mt-32 py-25" id="proyek">
         <h1
           className="text-center text-4xl font-bold mb-2"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          Proyek
+          Projects
         </h1>
         <p
           className="text-base/loose text-center opacity-50"
@@ -172,16 +169,16 @@ function App() {
           data-aos-duration="1000"
           data-aos-delay="300"
         >
-          Berikut ini beberapa proyek yang telah dibuat:
+          projects I have worked on:
         </p>
         <div className="Proyek-box mt-14 grid grid-cols-1 sm:grid-cols-3  gap-4">
           {listProyek.map((proyek) => (
             <div
               key={proyek.id}
-              className="p-4 bg-zinc-800 rounded-md"
+              className="bg-zinc-800 p-8 rounded-lg text-center border border-zinc-700 hover:border-blue-600 transition-all group"
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-delay={proyek.dad}
+              data-aos-delay={proyek.delay}
             >
               <img src={proyek.gambar} alt="Proyek Image" loading="lazy" />
               <div>
@@ -204,7 +201,7 @@ function App() {
                     rel="noopener noreferrer" // Tambahan: keamanan untuk target="_blank"
                     className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600"
                   >
-                    Lihat Proyek
+                    View Details
                   </a>
                 </div>
               </div>
@@ -213,15 +210,69 @@ function App() {
         </div>
       </div>
 
-      {/*tentang*/}
+     {/* TOKOH YANG MENGINSPIRASI */}
+      <div className="inspirasi mt-32" id="inspirasi">
+        <h1
+          className="text-center text-4xl font-bold mb-2"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          My Inspirations
+        </h1>
+        <p
+          className="text-base/loose text-center opacity-50 mb-14"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          Figures who motivate my journey:
+        </p>
+
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+          {listInspirasi.map((tokoh) => (
+            <div
+              key={tokoh.id}
+              className="bg-zinc-800 p-8 rounded-lg text-center border border-zinc-700 hover:border-blue-600 transition-all group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={tokoh.delay}
+            >
+              {/* Gambar Lingkaran */}
+              <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-6 border-2 border-zinc-600 group-hover:border-blue-500 transition-colors">
+                <img
+                  src={tokoh.gambar}
+                  alt={tokoh.nama}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              
+              {/* Nama & Role */}
+              <h3 className="text-xl font-bold text-white mb-1">{tokoh.nama}</h3>
+              <p className="text-blue-500 text-sm font-medium mb-4 uppercase tracking-wide">
+                {tokoh.role}
+              </p>
+              
+              {/* Quote */}
+              <div className="relative">
+                 <p className="text-gray-400 text-sm italic leading-relaxed">
+                  "{tokoh.quote}"
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      
       {/*Kontak*/}
-      <div className="kontak mt-32 sm:p-10 p-0 " id="kontak">
+      <div className="kontak mt-32 sm:p-22 p-0 " id="kontak">
         <h1
           className="text-4xl mb-2 font-bold text-center"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          Kontak
+          Contact
         </h1>
         <p
           className="text-base/loose text-center mb-10 opacity-50"
@@ -229,7 +280,7 @@ function App() {
           data-aos-duration="1000"
           data-aos-delay="300"
         >
-          Mari terkoneksi dengan saya
+         Let's Connect
         </p>
         <form
           action="https://formsubmit.co/sragenkota87@gmail.com"
@@ -242,11 +293,11 @@ function App() {
         >
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
-              <label className="font-semibold ">Nama Lengkap</label>
+              <label className="font-semibold ">Full Name</label>
               <input
                 type="text"
                 name="nama"
-                placeholder="Masukkan Nama...."
+                placeholder="Enter your name..."
                 className="border border-zinc-500 p-2 rounded-md"
                 required
               />
@@ -256,21 +307,21 @@ function App() {
               <input
                 type="email"
                 name="email"
-                placeholder="Masukkan Email...."
+                placeholder="Enter your email..."
                 className="border border-zinc-500 p-2 rounded-md"
                 required
               />
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="pesan" className="font-semibold ">
-                Pesan
+                Message
               </label>
               <textarea
                 name="pesan"
                 id="pesan"
                 cols="45"
                 rows="7"
-                placeholder="Pesan...."
+                placeholder="Write your message here..."
                 className="border border-zinc-500 p-2 rounded-md"
                 required
               ></textarea>
@@ -280,7 +331,7 @@ function App() {
                 type="submit"
                 className="bg-blue-700 p-3 rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-blue-600"
               >
-                Kirim Pesan
+                Send
               </button>
             </div>
           </div>

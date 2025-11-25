@@ -138,7 +138,7 @@ export const listTools = [
 
 import Proyek1 from "/assets/proyek/pullup.png";
 import Proyek2 from "/assets/proyek/alter.png";
-import Proyek3 from "/assets/proyek/kera_kaget.jpg";
+
 import Proyek4 from "/assets/proyek/catering.png";
 
 
@@ -147,7 +147,7 @@ export const listProyek = [
     id: 1,
     gambar: Proyek1,
     nama: "Pull-up dan Push-up Detection ",
-    desk: "bantuan deteksi push-up dan pull-up untuk membantu menyempurnakan gerakan yang dilakukan ",
+    desk: "AI-based detection for push-ups and pull-ups to help users perfect their exercise form.",
     tools: ["Python"],
     dad: "200",
     link:"https://github.com/RasyifIbnu/AI-Lanjut"
@@ -156,30 +156,49 @@ export const listProyek = [
     id: 2,
     gambar: Proyek2,
     nama: "Alter Chess",
-    desk: "Website dan game catur dengan pilihan skill yang tersedia",
-    tools: ["Astro", "CSS", "Javascript", "C#"],
+    desk: "A chess website and game featuring various selectable skill levels.",
+    tools: ["Astro", "CSS", "Javascript"],
     dad: "300",
     // Tambahkan link di bawah ini
     link: "https://alterchess.my.id", 
   },
-  {
-    id: 3,
-    gambar: Proyek3,
-    nama: "Emoji ",
-    desk: "Mendeteksi ekspresi wajah dengan menampilkan emoji yang sudah diatur",
-    tools: ["Python"],
-    dad: "200",
-    link:"https://github.com/RasyifIbnu/emoji"
-  },
+ 
   {
     id: 4,
     gambar: Proyek4,
-    nama: "UI App Catering",
-    desk: "Tampilan desain aplikasi layanan makanan sehari-hari",
+    nama: "Daily Food Ordering App UI Design",
+    desk: "User interface design for a daily food service app.",
     tools: ["Figma", "Adobe Ilustrator"],
     dad: "500",
     link:"https://www.figma.com/design/hYpkNwbsoaCCH0ZHgUP1cb/Catering?node-id=0-1&p=f&t=dqocwCyM7rUbVr1u-0"
   },
   
 
+];
+
+export const listInspirasi = [
+  {
+    id: 1,
+    nama: "Elon Musk",
+    role: "CEO Tesla & SpaceX",
+    quote: "When something is important enough, you do it even if the odds are not in your favor.",
+    gambar: "https://hips.hearstapps.com/hmg-prod/images/elon-musk-gettyimages-2147789844-web-675b2c17301ea.jpg", // Ganti dengan link gambar asli atau import dari data.js
+    delay: "300",
+  },
+  {
+    id: 2,
+    nama: "Sathoshi Nakamoto", // Contoh tokoh fiksi/populer sesuai selera
+    role: "Creator of Bitcoin",
+    quote: "If you don't believe it or don't get it, I don't have the time to try to convince you, sorry.",
+    gambar: "https://image.idntimes.com/post/20250130/whatsapp-image-2025-01-30-at-173556-ad571333f82f07218e56dd09e2b6433e-9458719323572ca62f8397be94371828.jpeg", // Ganti gambar
+    delay: "500",
+  },
+  {
+    id: 3,
+    nama: "Sandhika Galih",
+    role: "Web Programming Lecturer",
+    quote: "Mulai aja dulu, error itu biasa.",
+    gambar: "https://sandhikagalih.github.io/portfolio-tailwind-css/dist/img/sandhika.png", // Ganti gambar
+    delay: "700",
+  },
 ];

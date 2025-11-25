@@ -44,17 +44,17 @@ const Navbar = () => {
       }`}
     >
       <div className="logo px-7 hidden md:block">
-        <h1 className="text-3xl font-bold text-white">Portofolio</h1>
+        <h1 className="text-3xl font-bold text-white">My Portofolio</h1>
       </div>
       <ul
-        className={`menu flex items-center sm:gap-10 gap-4 md:static fixed left-1/2 -translate-x-1/2 md:translate-x-0 md:translate-x-0 px-7 w-full md:w-auto justify-center md:justify-end`}
+        className={`menu flex items-center sm:gap-10 gap-4 md:static fixed left-1/2 -translate-x-1/2  md:translate-x-0 px-7 w-full md:w-auto justify-center md:justify-end`}
       >
         <li>
           <a
             href="#beranda"
             className="sm:text-lg text-base font-medium text-white hover:text-blue-400 transition-colors"
           >
-            Beranda
+            Home
           </a>
         </li>
         <li>
@@ -62,7 +62,7 @@ const Navbar = () => {
             href="#tentang"
             className="sm:text-lg text-base font-medium text-white hover:text-blue-400 transition-colors"
           >
-            Tentang
+            About 
           </a>
         </li>
         <li>
@@ -70,7 +70,7 @@ const Navbar = () => {
             href="#proyek"
             className="sm:text-lg text-base font-medium text-white hover:text-blue-400 transition-colors"
           >
-            Proyek
+            Project
           </a>
         </li>
         <li>
@@ -78,7 +78,7 @@ const Navbar = () => {
             href="#kontak"
             className="sm:text-lg text-base font-medium text-white hover:text-blue-400 transition-colors"
           >
-            Kontak
+            Contact
           </a>
         </li>
       </ul>
