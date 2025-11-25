@@ -22,6 +22,9 @@ const Footer = () => {
              <a href="https://youtube.com/@nuninuch?si=0bKN2ezZyLpEwsRJ">
                 <i className="ri-youtube-fill ri-2x"></i>
             </a>
+            <a href="https://www.tiktok.com/@nuinu19?_r=1&_t=ZS-91hFOqQ0wAW">
+                <i className="ri-tiktok-fill ri-2x"></i>
+            </a>
         </div>
     </div>
   );
