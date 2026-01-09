@@ -54,14 +54,14 @@ export const listTools = [
     dad: "400",
     link: "https://tailwindcss.com/",
   },
-  {
+  /*{
     id: 5,
     gambar: Tools5,
     nama: "Bootstrap",
     ket: "Framework",
     dad: "500",
     link: "https://getbootstrap.com/",
-  },
+  },*/
   {
     id: 6,
     gambar: Tools6,
@@ -86,14 +86,14 @@ export const listTools = [
     dad: "800",
     link: "https://github.com/",
   },
-  {
+  /*{
     id: 9,
     gambar: Tools9,
     nama: "Adobe Illustrator",
     ket: "Design App",
     dad: "900",
     link: "https://www.adobe.com/",
-  },
+  },*/
   {
     id: 10,
     gambar: Tools10,
@@ -179,10 +179,10 @@ export const listProyek = [
 export const listInspirasi = [
   {
     id: 1,
-    nama: "Elon Musk",
-    role: "CEO Tesla & SpaceX",
-    quote: "When something is important enough, you do it even if the odds are not in your favor.",
-    gambar: "https://hips.hearstapps.com/hmg-prod/images/elon-musk-gettyimages-2147789844-web-675b2c17301ea.jpg", // Ganti dengan link gambar asli atau import dari data.js
+    nama: "dr. Davin Rizky Parulian Silalahi",
+    role: "Dokter bedah onkologi",
+    quote: "Dunia menuntut lu 100 persen, walaupun kondisi lu enggak 100 persen. Salahmu lanang.",
+    gambar: "https://kitathletic.cc/cdn/shop/articles/20557A0F-ED69-4599-807C-99891C06C304_bedd4378-96fa-45cb-a861-c9678f3b71cc_720x.jpg?v=1743420213", // Ganti dengan link gambar asli atau import dari data.js
     delay: "300",
   },
   {
