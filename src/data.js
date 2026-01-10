@@ -185,8 +185,8 @@ export const listInspirasi = [
     gambar: "https://kitathletic.cc/cdn/shop/articles/20557A0F-ED69-4599-807C-99891C06C304_bedd4378-96fa-45cb-a861-c9678f3b71cc_720x.jpg?v=1743420213", // Ganti dengan link gambar asli atau import dari data.js
     delay: "300",
   },
-  {
-    id: 2,
+   {
+   id: 2,
     nama: "Sathoshi Nakamoto", // Contoh tokoh fiksi/populer sesuai selera
     role: "Creator of Bitcoin",
     quote: "If you don't believe it or don't get it, I don't have the time to try to convince you, sorry.",
