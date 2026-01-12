@@ -180,19 +180,19 @@ export const listInspirasi = [
   {
     id: 1,
     nama: "dr. Davin Rizky Parulian Silalahi",
-    role: "Dokter bedah onkologi",
-    quote: "Dunia menuntut lu 100 persen, walaupun kondisi lu enggak 100 persen. Salahmu lanang.",
+    role: "Consultant Surgical Oncologist",
+    quote: "Sejak kapan kewajiban jadi pilihan. Salahmu lanang.",
     gambar: "https://kitathletic.cc/cdn/shop/articles/20557A0F-ED69-4599-807C-99891C06C304_bedd4378-96fa-45cb-a861-c9678f3b71cc_720x.jpg?v=1743420213", // Ganti dengan link gambar asli atau import dari data.js
     delay: "300",
   },
-   {
+   /*{
    id: 2,
     nama: "Sathoshi Nakamoto", // Contoh tokoh fiksi/populer sesuai selera
     role: "Creator of Bitcoin",
     quote: "If you don't believe it or don't get it, I don't have the time to try to convince you, sorry.",
     gambar: "https://image.idntimes.com/post/20250130/whatsapp-image-2025-01-30-at-173556-ad571333f82f07218e56dd09e2b6433e-9458719323572ca62f8397be94371828.jpeg", // Ganti gambar
     delay: "500",
-  },
+  },*/
   {
     id: 3,
     nama: "Sandhika Galih",
